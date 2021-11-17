@@ -165,6 +165,7 @@ function getFillStroke(child) {
 	return {
 		fill: isBaseRectangle ? 'white' : fill,
 		fillStyle: isBaseRectangle ? 'solid' : 'hachure',
+		roughness: 0,
 		stroke: stroke
 	};
 }
