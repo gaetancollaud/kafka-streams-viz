@@ -190,9 +190,7 @@ function traverseSvgToRough(child) {
 		var rx = +child.getAttribute('rx');
 		var ry = +child.getAttribute('ry');
 
-		var opts = getFillStroke(child);
-
-		rc.ellipse(cx, cy, rx * 1.5, ry * 1.5);
+        rc.ellipse(cx, cy, rx * 1.5, ry * 1.5, {roughness: 0, fill: 'white', fillStyle: 'solid'});
 		return;
   	}
 
